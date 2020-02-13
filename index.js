@@ -10,3 +10,16 @@ exports.annualCompoundInterestByYear = (
     interest_rate,
     years
   ) => (original_value * Math.pow(1 + interest_rate / 100, years)).toFixed(2);
+
+  exports.yearlyAmortization = (
+    principle,
+    _rate,
+    term
+  ) => {
+    rate = (_rate/100) / 12;
+    const numerator = rate*Math.pow((1+rate), (12*term));
+    const denominator = Math.pow((1+rate), (12*term)) - 1;
+
+    const paymentPerPeriod = principle * (numerator / denominator);
+    return paymentPerPeriod.toFixed(2);
+  };

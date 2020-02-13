@@ -1,6 +1,6 @@
 {
   "name": "buckjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handly Helpers for Financial Applications",
   "main": "index.js",
   "scripts": {
