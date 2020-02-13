@@ -1,0 +1,27 @@
+{
+  "name": "buckjs",
+  "version": "1.0.0",
+  "description": "Handly Helpers for Financial Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakenherman/buckjs.git"
+  },
+  "keywords": [
+    "finance",
+    "financial",
+    "money"
+  ],
+  "author": "Jaken C. Herman",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/jakenherman/buckjs/issues"
+  },
+  "homepage": "https://github.com/jakenherman/buckjs#readme",
+  "dependencies": {
+    "mocha": "^7.0.1"
+  }
+}
