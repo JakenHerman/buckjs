@@ -34,3 +34,14 @@ describe('Amortization', function() {
   
   });
 });
+
+describe('50/30/20 Rule', function() {
+  describe('#fiftyThirtyTwenty()', function() {
+    it('should return a json object with properties 50, 30, 20 when given monthly_income of 100', function() {
+      const result = buck.fiftyThirtyTwentyRule(100);
+      assert.equal(result.necessities, 50);
+      assert.equal(result.wants, 30);
+      assert.equal(result.savings_and_debt, 20);
+    });
+  });
+});

@@ -23,3 +23,11 @@ exports.annualCompoundInterestByYear = (
     const paymentPerPeriod = principle * (numerator / denominator);
     return paymentPerPeriod.toFixed(2);
   };
+
+  exports.fiftyThirtyTwentyRule = (
+    monthly_income
+  ) => ({
+    necessities: monthly_income * .5,
+    wants: monthly_income * .3,
+    savings_and_debt: monthly_income * .2
+  });
