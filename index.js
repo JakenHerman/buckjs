@@ -31,3 +31,22 @@ exports.annualCompoundInterestByYear = (
     wants: monthly_income * .3,
     savings_and_debt: monthly_income * .2
   });
+
+  /**
+   * Caluclates the future value of an annuity
+   * @param {number} original_value The original principle in the account
+   * @param {number} payments_made The dollar value of regularly occuring contributions
+   * @param {number} times_to_compound How many times the account will compound
+   * @param {number} interest_rate The interest rate of the annuity
+   * @returns {number}
+   */
+  exports.annuityFutureValue = (
+    original_value,
+    payments_made,
+    times_to_compound,
+    interest_rate
+  ) => {
+    const original_compounded = original_value * Math.pow((1 + interest_rate), times_to_compound);
+    const payments_compounded = (payments_made * (Math.pow((1 + interest_rate), times_to_compound) - 1)) / interest_rate;
+    return (original_compounded + payments_compounded).toFixed(2);
+  };

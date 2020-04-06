@@ -45,3 +45,12 @@ describe('50/30/20 Rule', function() {
     });
   });
 });
+
+describe('Annuity Future Value', function () {
+  describe('#annuityFutureValue()', function() {
+    it('should return 9237.15 with original prinicipal of 1000, payments of 100, interest rate of 8%, and 20 compounding periods', function() {
+      const result = buck.annuityFutureValue(1000, 100, 20, 0.08);
+      assert.equal(result, 9237.15);
+    });
+  })
+});
