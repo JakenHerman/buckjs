@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/jakenherman/buckjs#readme",
   "dependencies": {
-    "mocha": "^7.0.1"
+    "mocha": "^10.2.0"
   }
 }
